@@ -8,7 +8,7 @@
   {{ $notif }}
 </div>
 @endif
-<form method="post" action="{{ site_url('backend/user/profile')}}">
+<form method="post" action="{{ current_url() }}">
   <div class="mb-3">
     <label for="username" class="form-label">Username</label>
     <input type="text" class="form-control" name="username" id="username" value="{{$user->username}}">
@@ -22,6 +22,6 @@
 @endsection
 
 
-
+<!-- site_url('backend/User/profile') -->
 
 

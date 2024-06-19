@@ -22,7 +22,8 @@
               <td>{{$user->username}}</td>
               <td>{{$user->password}}</td>
               <td>{{$user->created_at}}</td>
-              <td><a href ="{{site_url('backend/Dashboard/hapus/'. $user->id )}}">x</a></td>
+              <td><a href ='{{site_url("backend/Dashboard/hapus/". $user->id )}}'>Hapus</a> | 
+              <a href ='{{site_url("backend/User/profile/" . $user->id )}}'>Edit</a></td>
             </tr>
             @endforeach
           </tbody>
