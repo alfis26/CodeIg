@@ -8,8 +8,4 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
-	public function tes ()
-	{
-		$this->load->view ('template/backend/theme');
-	}
 }
